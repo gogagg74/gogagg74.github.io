@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartScan EV Authentication</title>
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            const state = urlParams.get('state');
+            
+            if (code) {
+                // ტესლას კოდი მიაქვს პირდაპირ შენს Xcode აპში
+                window.location.href = "smartscanev://test?code=" + code + "&state=" + state;
+            } else {
+                document.body.innerHTML = "<h3>შეცდომა: კოდი ვერ მოიძებნა.</h3>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+        მიმდინარეობს გადამისამართება SmartScan EV აპლიკაციაში...
+    </p>
+</body>
+</html>
