@@ -1,1 +1,14 @@
-
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.gogagogia.smartscanproev",
+      "sha256_cert_fingerprints": [
+        "FA:2A:43:04:E8:4A:E3:62:3B:5A:F4:A2:2F:E9:57:9F:87:C5:10:E0:72:0D:3E:92:DF:D3:5F:AA:4C:CC:D3:85"
+      ]
+    }
+  }
+]
